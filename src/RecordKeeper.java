@@ -26,6 +26,15 @@ public class RecordKeeper {
     }
 
     public String getRecord(int gameNumber) {
-        return null;
+        if(KDAMap.containsKey(gameNumber)) {
+            return KDAMap.get(gameNumber).toString();
+        } else {
+            System.out.println("No record found");
+            return null;
+        }
+    }
+
+    public String toString() {
+        return String.format("Your overall record is %d kills, %d deaths, and %d assists.", totalKills, totalDeaths, totalAssists);
     }
 }
