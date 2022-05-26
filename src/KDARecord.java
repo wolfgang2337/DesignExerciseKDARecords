@@ -12,7 +12,7 @@ public class KDARecord {
     }
 
     public String toString() {
-        return String.format("In game #%d, you killed %d times, got killed %d times, and got an assist %d times"
+        return String.format("In game #%d, you got %d kills, died %d times, and assisted a teammate's kill %d times"
                 , gameNumber, kills, deaths, assists);
     }
 }
